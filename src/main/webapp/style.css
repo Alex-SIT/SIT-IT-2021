@@ -1,0 +1,149 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #012e5e;
+}
+
+body{
+	background-color: #012e5e;
+    margin:0;
+}
+
+.container{
+	background-color: #ccc;
+    width: 65rem;
+    margin: 0 auto 0 auto;
+    height: 100%;
+    overflow-y:auto;
+}
+
+.main-panel{
+    padding: 4em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10pt;
+}
+
+.top-panel{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 20px 20px 0 20px;
+	height: 234px;
+    width: 75%;
+}
+
+.top-info{
+    align-self: flex-end;
+    width: 60%;
+}
+.top-info:last-child p{
+    margin-bottom: 0px;
+}
+
+.top-image{
+    width: 30%;
+}
+
+.top-image img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.inbetween-header{
+    margin:0;
+    padding: 20px 0;
+}
+
+.middle-panel{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+    width: 70%;
+    padding: 20px 50px;
+}
+.card-column{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill-group-header{
+    margin: 0;
+    padding: 20px 0;
+}
+
+.circles{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20em;
+    gap: 2.25em;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+.circle {
+    width: 4em;
+    height: 4em;
+    background: conic-gradient(
+        #012e5e var(--percent),
+        #ffb606 var(--percent)
+    );
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle .inner{
+    background: white;
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+.circle .inner::after{
+    content: attr(data-percent);
+    opacity: 0;
+    font-size: 12pt;
+    transition: opacity 100ms ease-in-out;
+}
+
+.circle .inner:hover::after{
+    opacity: 1;
+}
+
+.bottom-panel{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 20px;
+}
+.bottom-panel .card-column{
+    align-items: flex-start;
+    gap: 1em;
+}
+.contact-group{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+.group-label{
+    margin: 0;
+    font-weight: bold;
+}
+.group-value{
+    margin: 0;
+}

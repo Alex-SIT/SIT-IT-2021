@@ -1,0 +1,64 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #012e5e;
+}
+
+body{
+	background-color: #ccc;
+    margin:0;
+}
+
+.container{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.sub-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-panel{
+	border-radius: 5px;
+	background-color: #ffb606;
+	width: 50rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-panel:first-child{
+	margin-top: 40px;
+}
+
+label{
+	margin-top: 20px;
+}
+
+input[type=text], input[type=password]{
+	width:90%;
+	background-color: #f4f4f4;
+	border-radius: 5px;
+	border: none;
+	margin-top: 10px;
+	padding: 12px 20px;
+}
+
+input[type=submit]{
+	width: 50%;
+	background-color: #012e5e;
+	color: white;
+	padding: 14px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+	border: none;
+	margin: 20px 0;
+}
+
+input:required{
+	border: 1px solid red;
+}
+
